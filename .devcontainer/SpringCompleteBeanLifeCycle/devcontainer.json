@@ -1,0 +1,53 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/java
+{
+	"name": "SpringCompleteBeanLifeCycle",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/java:0-17",
+	"workspaceFolder": "/workspaces/WebApp/SpringCompleteBeanLifeCycle",
+	"features": {
+		"ghcr.io/devcontainers/features/java:1": {
+			"version": "17"
+		}
+	},
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			"settings": {
+				"workbench.colorTheme": "Visual Studio Dark", // Set Dark Theme
+				// JAVA configurations
+				"java.project.sourcePaths": [				// Configure the source paths for
+					"${workspaceFolder}/src/main/java",    	// Code
+					"${workspaceFolder}/test/java"			// Tests
+				],
+				"java.configuration.updateBuildConfiguration": "interactive",
+				"java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -Xlog:disable",
+				// Checkstyle configurations
+				"java.checkstyle.configuration": "${workspaceFolder}/checkstyle.xml",
+				"java.checkstyle.version": "9.2",
+				// SpellChecker configurations
+				"cSpell.language": "en, de",
+				"cSpell.ignorePaths": [
+					"*.md",                 // Ignore the .md file 
+					".git",                 // Ignore the .git directory
+					"*.json",               // Ignore all .json files.
+					"*.xml"                 // Ignore all .xml files.
+				],
+				"java.compile.nullAnalysis.mode": "disabled"
+			},
+			"extensions": [
+				"streetsidesoftware.code-spell-checker",
+				"shengchen.vscode-checkstyle",
+				"tenninebt.vscode-koverage",
+				"redhat.java",
+				"sonarsource.sonarlint-vscode",
+				"vscjava.vscode-java-pack",
+				"vmware.vscode-boot-dev-pack",
+				"mhutchie.git-graph",
+				"MS-CEINTL.vscode-language-pack-de",
+				"streetsidesoftware.code-spell-checker-german"
+			]
+		}
+	}
+}

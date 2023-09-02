@@ -31,6 +31,48 @@
             "request": "launch",
             "mainClass": "edu.fra.uas.BeanBeispielExtendedTestApplication",
             "projectName": "BeanBeispielExtendedTest"
+        },
+        {
+            "type": "java",
+            "name": "SpringIoCApplication",
+            "request": "launch",
+            "mainClass": "edu.fra.uas.SpringIoCApplication",
+            "projectName": "SpringIoC"
+        },
+        {
+            "type": "java",
+            "name": "ApplicationInitializer",
+            "request": "launch",
+            "mainClass": "edu.fra.uas.ApplicationInitializer",
+            "projectName": "SpringApplicationContext"
+        },
+        {
+            "type": "java",
+            "name": "SpringBeanLifeCycleApplication",
+            "request": "launch",
+            "mainClass": "edu.fra.uas.SpringBeanLifeCycleApplication",
+            "projectName": "SpringBeanLifeCycle"
+        },
+        {
+            "type": "java",
+            "name": "SpringCompleteBeanLifeCycleApplication",
+            "request": "launch",
+            "mainClass": "edu.fra.uas.SpringCompleteBeanLifeCycleApplication",
+            "projectName": "SpringCompleteBeanLifeCycle"
+        },
+        {
+            "type": "java",
+            "name": "SpringDependencyInjectionApplication",
+            "request": "launch",
+            "mainClass": "edu.fra.uas.SpringDependencyInjectionApplication",
+            "projectName": "SpringDependencyInjection"
+        },
+        {
+            "type": "java",
+            "name": "SpringScopesApplication",
+            "request": "launch",
+            "mainClass": "edu.fra.uas.SpringScopesApplication",
+            "projectName": "SpringScopes"
         }
     ]
 }
