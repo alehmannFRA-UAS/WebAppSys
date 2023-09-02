@@ -1,0 +1,36 @@
+{
+    // Verwendet IntelliSense zum Ermitteln möglicher Attribute.
+    // Zeigen Sie auf vorhandene Attribute, um die zugehörigen Beschreibungen anzuzeigen.
+    // Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "BeanBeispielApplication",
+            "request": "launch",
+            "mainClass": "edu.fra.uas.BeanBeispielApplication",
+            "projectName": "BeanBeispiel"
+        },
+        {
+            "type": "java",
+            "name": "BeanBeispielExtendedApplication",
+            "request": "launch",
+            "mainClass": "edu.fra.uas.BeanBeispielExtendedApplication",
+            "projectName": "BeanBeispielExtended"
+        },
+        {
+            "type": "java",
+            "name": "BeanBeispielExtendedLoggingApplication",
+            "request": "launch",
+            "mainClass": "edu.fra.uas.BeanBeispielExtendedLoggingApplication",
+            "projectName": "BeanBeispielExtendedLogging"
+        },
+        {
+            "type": "java",
+            "name": "BeanBeispielExtendedTestApplication",
+            "request": "launch",
+            "mainClass": "edu.fra.uas.BeanBeispielExtendedTestApplication",
+            "projectName": "BeanBeispielExtendedTest"
+        }
+    ]
+}
