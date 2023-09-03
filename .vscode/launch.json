@@ -73,6 +73,13 @@
             "request": "launch",
             "mainClass": "edu.fra.uas.SpringScopesApplication",
             "projectName": "SpringScopes"
+        },
+        {
+            "type": "java",
+            "name": "MvcApplication",
+            "request": "launch",
+            "mainClass": "edu.fra.uas.MvcApplication",
+            "projectName": "MVC"
         }
     ]
 }

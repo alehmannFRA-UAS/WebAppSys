@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Update User</title>
+    </head>
+    <body>
+        <h1>Update User</h1>
+        <!-- a form to send parameters using http method post-->
+        <form action="/updated" method="post">
+            <label for="id">ID:</label><br>
+            <input type="number" id="id" name="id"><br>
+            <label for="firstName">First name:</label><br>
+            <input type="text" id="firstName" name="firstName"><br>
+            <label for="lastName">Last name:</label><br>
+            <input type="text" id="lastName" name="lastName"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br><br>
+            <label for="password">Password:</label><br>
+            <input type="text" id="password" name="password"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <br/>
+        <a href="/list">Back to user list</a>
+        <footer>
+            <small id="today"></small>
+        </footer>
+        <script>
+            var date = new Date();
+            var year = date.getFullYear();
+            document.getElementById("today").innerHTML = "&copy; FRA-UAS MVC Example, "+year;
+        </script> 
+    </body>
+</html>

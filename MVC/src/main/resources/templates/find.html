@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>User found</title>
+    </head>
+    <body>
+        <h1>User found by ID</h1>
+        <p th:text="${user.email}">Email</p>
+        <br/>
+        <a href="/list">Back to user list</a>
+        <footer>
+            <small id="today"></small>
+        </footer>
+        <script>
+            var date = new Date();
+            var year = date.getFullYear();
+            document.getElementById("today").innerHTML = "&copy; FRA-UAS MVC Example, "+year;
+        </script> 
+    </body>
+</html>

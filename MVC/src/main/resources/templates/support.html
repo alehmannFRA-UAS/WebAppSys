@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Error</title>
+    </head>
+    <body>
+        <h1>Support Friendly Error Page</h1>
+
+        <p th:if="${url}">
+            <b>Page:</b> <span th:text="${url}">Page URL</span>
+        </p>
+
+        <p th:if="${timestamp}" id='created'>
+            <b>Occurred:</b> <span th:text="${timestamp}">Timestamp</span>
+        </p>
+    
+        <p th:if="${status}">
+            <b>Response Status:</b> <span th:text="${status}">status-code</span> <span
+                th:if="${error}" th:text="'('+${error}+')'">error ...</span>
+        </p>
+
+        <p>Application has encountered an error. Please contact support on ...</p>
+    
+        <p>Support may ask you to right click to view page source.</p>
+
+        <div th:utext="'&lt;!--'" th:remove="tag"></div>
+	    <div th:utext="'Failed URL: ' +  ${url}" th:remove="tag">${url}</div>
+	    <div th:utext="'Exception: ' + ${exception.message}" th:remove="tag">${exception.message}</div>
+	    <ul th:remove="tag">
+		    <li th:each="ste : ${exception.stackTrace}" th:remove="tag"><span
+			    th:utext="${ste}" th:remove="tag">${ste}</span></li>
+	    </ul>
+	    <div th:utext="'--&gt;'" th:remove="tag"></div>
+
+        <footer>
+            <small id="today"></small>
+        </footer>
+        <script>
+            var date = new Date();
+            var year = date.getFullYear();
+            document.getElementById("today").innerHTML = "&copy; FRA-UAS MVC Example, "+year;
+        </script> 
+    </body>
+</html>

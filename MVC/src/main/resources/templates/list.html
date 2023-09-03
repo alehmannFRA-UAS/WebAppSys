@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>List of People</title>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>List of People</h1>
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Role</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Password</th>
+            </tr>
+            <tr th:each="user : ${users}">
+                <td th:text="${user.id}">Id</td>
+                <td th:text="${user.role}">Role</td>
+                <td th:text="${user.firstName}">First Name</td>
+                <td th:text="${user.lastName}">Last Name</td>
+                <td th:text="${user.email}">Email</td>
+                <td th:text="${user.password}">Password</td>
+            </tr>
+        </table>
+        <br/>
+        <p>You may try one of the following links</p>
+        <ul>
+            <li><a href="/find?id=1">Find user by id</a></li>
+            <li><a href="/add?firstName=Celine&lastName=Clever&email=celine.clever%40example.com&password=123456">Add new user</a></li>
+            <li><a href="/update">Update an existing user using form sending POST method</a></li>
+            <li><a href="/updated?id=2&firstName=Alice&lastName=Abraham&email=alice%40example.com&password=123A456">Update an existing user using GET method</a></li>
+            <li><a href="/delete/3">Delete an existing user by id</a></li>
+        </ul>
+        <footer>
+            <small id="today"></small>
+        </footer>
+        <script>
+            var date = new Date();
+            var year = date.getFullYear();
+            document.getElementById("today").innerHTML = "&copy; FRA-UAS MVC Example, "+year;
+        </script> 
+    </body>
+</html>

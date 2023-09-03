@@ -15,7 +15,7 @@
     - SpringDependencyInjection
     - SpringScopes
 3. Dritte Übung:
-    - MVC
+    - MVC (Model View Control)
 4. Vierte Übung:
     - REST-CURD
 5. Fünfte Übung:
