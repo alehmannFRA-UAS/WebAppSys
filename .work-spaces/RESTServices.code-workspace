@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../UserService"
+		},
+		{
+			"path": "../ChatService"
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "interactive"
+	}
+}

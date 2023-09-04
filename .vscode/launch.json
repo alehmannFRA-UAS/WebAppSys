@@ -83,18 +83,29 @@
         },
         {
             "type": "java",
-            "name": "ApiApplication",
+            "name": "RESTfulAPIApplication",
             "request": "launch",
             "mainClass": "edu.fra.uas.ApiApplication",
-            "projectName": "MVC"
+            "projectName": "RESTfulAPI"
         },
         {
             "type": "java",
-            "name": "Spring Boot-ApiApplication<RESTfulAPI>",
+            "name": "Spring Boot-ChatApplication<ChatService>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
-            "mainClass": "edu.fra.uas.ApiApplication",
-            "projectName": "RESTfulAPI",
+            "mainClass": "edu.fra.uas.ChatApplication",
+            "projectName": "ChatService",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=46439 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=ChatService"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-UserApplication<UserService>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "edu.fra.uas.UserApplication",
+            "projectName": "UserService",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }

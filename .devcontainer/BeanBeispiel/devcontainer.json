@@ -4,7 +4,7 @@
 	"name": "BeanBeispiel",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/java:0-17",
-	"workspaceFolder": "/workspaces/WebApp/BeanBeispiel",
+	"workspaceFolder": "/workspaces/WebAppSys/BeanBeispiel",
 	"features": {
 		"ghcr.io/devcontainers/features/java:1": {
 			"version": "17"
