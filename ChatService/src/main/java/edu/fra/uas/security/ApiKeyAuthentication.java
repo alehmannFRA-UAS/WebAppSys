@@ -1,4 +1,4 @@
-package edu.fra.uas.service;
+package edu.fra.uas.security;
 
 import java.util.Collection;
 

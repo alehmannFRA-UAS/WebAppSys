@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 import edu.fra.uas.model.User;
 import edu.fra.uas.model.UserDTO;
-import edu.fra.uas.respository.UserRepository;
+import edu.fra.uas.repository.UserRepository;
 
 /**
  * This class represents the service for the user.

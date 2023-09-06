@@ -1,4 +1,4 @@
-package edu.fra.uas.respository;
+package edu.fra.uas.repository;
 
 import java.util.HashMap;
 

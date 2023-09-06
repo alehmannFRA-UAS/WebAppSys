@@ -1,4 +1,4 @@
-package edu.fra.uas.service;
+package edu.fra.uas.security;
 
 import static org.springframework.security.config.Customizer.withDefaults;
 
@@ -13,7 +13,6 @@ import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 @EnableWebSecurity
-//@EnableMethodSecurity(prePostEnabled = true)
 public class SecurityConfig {    
 
     @Bean
