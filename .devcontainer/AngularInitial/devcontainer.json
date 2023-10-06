@@ -1,0 +1,37 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/java
+{
+	"name": "Default",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:18",
+	"workspaceFolder": "/workspaces/WebAppSys/AngularInitial",
+	"features": {
+		"ghcr.io/devcontainers-contrib/features/angular-cli:2": {},
+		"ghcr.io/devcontainers-contrib/features/jshint:2": {}
+	},
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			"settings": {
+				"workbench.colorTheme": "Visual Studio Dark", // Set Dark Theme
+				// SpellChecker configurations
+				"cSpell.language": "en, de",
+				"cSpell.ignorePaths": [
+					"*.md",                 // Ignore the .md file 
+					".git",                 // Ignore the .git directory
+					"*.json",               // Ignore all .json files.
+					"*.xml"                 // Ignore all .xml files.
+				]
+			},
+			"extensions": [
+				"streetsidesoftware.code-spell-checker",
+				"mhutchie.git-graph",
+				"MS-CEINTL.vscode-language-pack-de",
+				"streetsidesoftware.code-spell-checker-german",
+				"dbaeumer.vscode-eslint",
+				"nodejs.node-essentials"
+			]
+		}
+	}
+}

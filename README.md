@@ -19,4 +19,10 @@
 4. Vierte Übung:
     - RESTful-API
 5. Fünfte Übung:
-    - 
+    - UserService und ChatService
+6. Sechste Übung
+    - IntroAngular
+7. Siebte Übung
+    - dddd
+8. Achte Übung
+    - sdsf
