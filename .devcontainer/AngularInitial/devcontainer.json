@@ -30,7 +30,9 @@
 				"MS-CEINTL.vscode-language-pack-de",
 				"streetsidesoftware.code-spell-checker-german",
 				"dbaeumer.vscode-eslint",
-				"nodejs.node-essentials"
+				"nodejs.node-essentials",
+				"cyrilletuzi.angular-schematics",
+				"Angular.ng-template"
 			]
 		}
 	}
