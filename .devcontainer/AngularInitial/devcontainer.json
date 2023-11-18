@@ -6,7 +6,9 @@
 	"image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:18",
 	"workspaceFolder": "/workspaces/WebAppSys/AngularInitial",
 	"features": {
-		"ghcr.io/devcontainers-contrib/features/angular-cli:2": {},
+		"ghcr.io/devcontainers-contrib/features/angular-cli:2": {
+			"version": "17.0.0"
+		},
 		"ghcr.io/devcontainers-contrib/features/jshint:2": {}
 	},
 	// Configure tool-specific properties.

@@ -9,8 +9,13 @@
 		"ghcr.io/devcontainers/features/java:1": {
 			"version": "17"
 		},
+		"ghcr.io/devcontainers-contrib/features/node-asdf:0": {
+			"version": "18.12.0"
+		},
 		"ghcr.io/devcontainers-contrib/features/jshint:2": {},
-		"ghcr.io/devcontainers-contrib/features/angular-cli:2": {}
+		"ghcr.io/devcontainers-contrib/features/angular-cli:2": {
+			"version": "17.0.0"
+		}
 	},
 	// Configure tool-specific properties.
 	"customizations": {
