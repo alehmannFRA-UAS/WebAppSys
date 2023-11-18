@@ -8,7 +8,9 @@
 	"features": {
 		"ghcr.io/devcontainers/features/java:1": {
 			"version": "17"
-		}
+		},
+		"ghcr.io/devcontainers-contrib/features/jshint:2": {},
+		"ghcr.io/devcontainers-contrib/features/angular-cli:2": {}
 	},
 	// Configure tool-specific properties.
 	"customizations": {
@@ -46,7 +48,11 @@
 				"vmware.vscode-boot-dev-pack",
 				"mhutchie.git-graph",
 				"MS-CEINTL.vscode-language-pack-de",
-				"streetsidesoftware.code-spell-checker-german"
+				"streetsidesoftware.code-spell-checker-german",
+				"dbaeumer.vscode-eslint",
+				"nodejs.node-essentials",
+				"cyrilletuzi.angular-schematics",
+				"Angular.ng-template"
 			]
 		}
 	}
