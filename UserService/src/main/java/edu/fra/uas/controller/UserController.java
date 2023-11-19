@@ -26,9 +26,10 @@ import edu.fra.uas.model.User;
 import edu.fra.uas.service.ChatService;
 import edu.fra.uas.service.UserService;
 
-import org.springframework.web.bind.annotation.CrossOrigin;
-@CrossOrigin
-@RequestMapping("/api")
+// die folgende Zeilen werden in Uebung 6 benötigt
+//import org.springframework.web.bind.annotation.CrossOrigin;
+//@CrossOrigin
+//@RequestMapping("/api")
 @RestController
 public class UserController {
     
