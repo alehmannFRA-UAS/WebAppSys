@@ -6,73 +6,94 @@
     "configurations": [
         {
             "type": "java",
-            "name": "BeanBeispielApplication",
+            "name": "UserApplication",
             "request": "launch",
-            "mainClass": "edu.fra.uas.BeanBeispielApplication",
-            "projectName": "BeanBeispiel"
+            "mainClass": "edu.fra.uas.UserApplication",
+            "projectName": "UserService"
         },
         {
             "type": "java",
-            "name": "BeanBeispielExtendedApplication",
+            "name": "ChatApplication",
             "request": "launch",
-            "mainClass": "edu.fra.uas.BeanBeispielExtendedApplication",
-            "projectName": "BeanBeispielExtended"
+            "mainClass": "edu.fra.uas.ChatApplication",
+            "projectName": "ChatService"
         },
         {
             "type": "java",
-            "name": "BeanBeispielExtendedLoggingApplication",
+            "name": "GraphQlClientApplication",
             "request": "launch",
-            "mainClass": "edu.fra.uas.BeanBeispielExtendedLoggingApplication",
-            "projectName": "BeanBeispielExtendedLogging"
+            "mainClass": "edu.fra.uas.GraphQlClientApplication",
+            "projectName": "GraphQL-Client"
         },
         {
             "type": "java",
-            "name": "BeanBeispielExtendedTestApplication",
+            "name": "GRpcClientStreamingApplication",
             "request": "launch",
-            "mainClass": "edu.fra.uas.BeanBeispielExtendedTestApplication",
-            "projectName": "BeanBeispielExtendedTest"
+            "mainClass": "edu.fra.uas.GRpcClientStreamingApplication",
+            "projectName": "gRPC-Client-Streaming"
         },
         {
             "type": "java",
-            "name": "SpringIoCApplication",
+            "name": "GRpcStreamingApplication",
             "request": "launch",
-            "mainClass": "edu.fra.uas.SpringIoCApplication",
-            "projectName": "SpringIoC"
+            "mainClass": "edu.fra.uas.GRpcStreamingApplication",
+            "projectName": "gRPC-Streaming"
         },
         {
             "type": "java",
-            "name": "ApplicationInitializer",
+            "name": "GRpcClientApplication",
             "request": "launch",
-            "mainClass": "edu.fra.uas.ApplicationInitializer",
-            "projectName": "SpringApplicationContext"
+            "mainClass": "edu.fra.uas.GRpcClientApplication",
+            "projectName": "gRPC-Client"
         },
         {
             "type": "java",
-            "name": "SpringBeanLifeCycleApplication",
+            "name": "GrpcApplication",
             "request": "launch",
-            "mainClass": "edu.fra.uas.SpringBeanLifeCycleApplication",
-            "projectName": "SpringBeanLifeCycle"
+            "mainClass": "edu.fra.uas.GrpcApplication",
+            "projectName": "gRPC"
         },
         {
             "type": "java",
-            "name": "SpringCompleteBeanLifeCycleApplication",
+            "name": "GraphQlClientSubscriptionApplication",
             "request": "launch",
-            "mainClass": "edu.fra.uas.SpringCompleteBeanLifeCycleApplication",
-            "projectName": "SpringCompleteBeanLifeCycle"
+            "mainClass": "edu.fra.uas.GraphQlClientSubscriptionApplication",
+            "projectName": "GraphQL-Client-Subscription"
         },
         {
             "type": "java",
-            "name": "SpringDependencyInjectionApplication",
+            "name": "GraphQlSubscriptionApplication",
             "request": "launch",
-            "mainClass": "edu.fra.uas.SpringDependencyInjectionApplication",
-            "projectName": "SpringDependencyInjection"
+            "mainClass": "edu.fra.uas.GraphQlSubscriptionApplication",
+            "projectName": "GraphQL-Subscription"
         },
         {
             "type": "java",
-            "name": "SpringScopesApplication",
+            "name": "GraphQlClientApplication",
             "request": "launch",
-            "mainClass": "edu.fra.uas.SpringScopesApplication",
-            "projectName": "SpringScopes"
+            "mainClass": "edu.fra.uas.GraphQlClientApplication",
+            "projectName": "graphqlClient"
+        },
+        {
+            "type": "java",
+            "name": "GraphqlClientApplication",
+            "request": "launch",
+            "mainClass": "edu.fra.uas.GraphqlClientApplication",
+            "projectName": "GraphQL-Client"
+        },
+        {
+            "type": "java",
+            "name": "GraphQlApplication",
+            "request": "launch",
+            "mainClass": "edu.fra.uas.GraphQlApplication",
+            "projectName": "GraphQL"
+        },
+        {
+            "type": "java",
+            "name": "ApiApplication",
+            "request": "launch",
+            "mainClass": "edu.fra.uas.ApiApplication",
+            "projectName": "RESTfulAPI"
         },
         {
             "type": "java",
@@ -83,24 +104,79 @@
         },
         {
             "type": "java",
-            "name": "RESTfulAPIApplication",
+            "name": "SpringScopesApplication",
             "request": "launch",
-            "mainClass": "edu.fra.uas.ApiApplication",
-            "projectName": "RESTfulAPI"
+            "mainClass": "edu.fra.uas.SpringScopesApplication",
+            "projectName": "SpringScopes"
         },
         {
             "type": "java",
-            "name": "Spring Boot-ChatApplication<ChatService>",
+            "name": "SpringDependencyInjectionApplication",
             "request": "launch",
-            "mainClass": "edu.fra.uas.ChatApplication",
-            "projectName": "ChatService",
+            "mainClass": "edu.fra.uas.SpringDependencyInjectionApplication",
+            "projectName": "SpringDependencyInjection"
         },
         {
             "type": "java",
-            "name": "Spring Boot-UserApplication<UserService>",
+            "name": "SpringCompleteBeanLifeCycleApplication",
             "request": "launch",
-            "mainClass": "edu.fra.uas.UserApplication",
-            "projectName": "UserService",
+            "mainClass": "edu.fra.uas.SpringCompleteBeanLifeCycleApplication",
+            "projectName": "SpringCompleteBeanLifeCycle"
+        },
+        {
+            "type": "java",
+            "name": "SpringBeanLifeCycleApplication",
+            "request": "launch",
+            "mainClass": "edu.fra.uas.SpringBeanLifeCycleApplication",
+            "projectName": "SpringBeanLifeCycle"
+        },
+        {
+            "type": "java",
+            "name": "ApplicationInitializer",
+            "request": "launch",
+            "mainClass": "edu.fra.uas.ApplicationInitializer",
+            "projectName": "SpringApplicationContext"
+        },
+        {
+            "type": "java",
+            "name": "SpringIoCApplication",
+            "request": "launch",
+            "mainClass": "edu.fra.uas.SpringIoCApplication",
+            "projectName": "SpringIoC"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "BeanExampleApplication(1)",
+            "request": "launch",
+            "mainClass": "edu.fra.uas.BeanExampleApplication",
+            "projectName": "BeanExample"
+        },
+        {
+            "type": "java",
+            "name": "BeanExampleApplication(2)",
+            "request": "launch",
+            "mainClass": "edu.fra.uas.BeanExampleApplication",
+            "projectName": "BeanExampleExtended"
+        },
+        {
+            "type": "java",
+            "name": "BeanExampleApplication(3)",
+            "request": "launch",
+            "mainClass": "edu.fra.uas.BeanExampleApplication",
+            "projectName": "BeanExampleExtendedLogging"
+        },
+        {
+            "type": "java",
+            "name": "BeanExampleApplication(4)",
+            "request": "launch",
+            "mainClass": "edu.fra.uas.BeanExampleApplication",
+            "projectName": "BeanExampleExtendedTesting"
         }
     ]
 }

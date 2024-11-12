@@ -1,0 +1,23 @@
+{
+    "folders": [
+		{
+			"path": "../Uebung9"
+		}
+    ],
+    "extensions": {
+        "recommendations": [
+            "VisualStudioExptTeam.vscodeintellicode",
+            "VisualStudioExptTeam.intellicode-api-usage-examples",
+            "redhat.java",
+            "vscjava.vscode-java-pack",
+            "vscjava.vscode-java-debug",
+            "vscjava.vscode-maven",
+            "vscjava.vscode-java-dependency",
+            "vscjava.vscode-java-test",
+            "vscjava.vscode-spring-boot-dashboard",
+            "vmware.vscode-boot-dev-pack",
+            "vmware.vscode-spring-boot",
+            "vscjava.vscode-spring-initializr"
+        ]
+    }
+}

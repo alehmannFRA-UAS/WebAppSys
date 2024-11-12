@@ -1,0 +1,18 @@
+syntax = "proto3";
+package edu.fra.uas.grpc;
+
+message Stock {
+   string symbol = 1;
+}
+
+message StockQuote {
+   string symbol = 1;
+   double price = 2;
+   string timestamp = 3;
+}
+
+service StockQuoteService {  
+   rpc serverSideStreamingGetListStockQuotes(Stock) returns (stream StockQuote) {}
+   rpc clientSideStreamingGetStatisticsOfStocks(stream Stock) returns (StockQuote) {}
+   rpc bidirectionalStreamingGetListsStockQuotes(stream Stock) returns (stream StockQuote) {}
+}

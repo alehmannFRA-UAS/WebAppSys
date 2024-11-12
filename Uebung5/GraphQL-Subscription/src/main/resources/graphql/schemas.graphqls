@@ -1,0 +1,34 @@
+
+# User type defines the structure of a User object
+type User {
+    id: ID!
+    role: String!
+    firstName: String!
+    lastName: String!
+    email: String!
+    password: String!
+}
+
+type StockPrice {
+    symbol: String
+    price: Float
+    timestamp: String
+}
+
+# Query type defines all the read operations
+type Query {
+    allUsers: [User]!
+    users(count: Int!, offset: Int!): [User]!
+    userById(id: ID): User!
+}
+
+# Mutation type defines all the post, put and delete operations
+type Mutation {
+    addUser(role: String!, firstName: String!, lastName: String!, email: String!, password: String!): User!
+    updateUser(id: ID!, role: String!, firstName: String!, lastName: String!, email: String!, password: String!): User!
+    deleteUser(id: ID!): Int
+}
+
+type Subscription {
+    stockPrice(symbol: String): StockPrice
+}

@@ -1,0 +1,32 @@
+syntax = "proto3";
+package edu.fra.uas.grpc;
+
+import "google/protobuf/wrappers.proto";
+
+message UsersRequest {}
+
+message UserProto {
+    int64 id = 1;
+    string role = 2;
+    string firstName = 3;
+    string lastName = 4;
+    string email = 5;
+    string password = 6;
+}
+
+message UsersResponse {
+    repeated UserProto users = 1;
+}
+
+service UsersService {
+    // lista all users
+    rpc listUsers(UsersRequest) returns (UsersResponse);
+    // finds a user by id
+    rpc findUserById(google.protobuf.Int64Value) returns (UserProto);
+    // creates a new user
+    rpc createUser(UserProto) returns (UserProto);
+    // updates a user
+    rpc updateUser(UserProto) returns (UserProto);
+    // deletes a user
+    rpc deleteUser(google.protobuf.Int64Value) returns (google.protobuf.BoolValue);
+}

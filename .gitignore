@@ -7,9 +7,6 @@
 # BlueJ files
 *.ctxt
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
 # Package Files #
 *.jar
 *.war
@@ -23,4 +20,45 @@
 hs_err_pid*
 replay_pid*
 
-/.idea/
+# intellij project files
+.idea
+*.iml
+*.ipr
+*.iws
+
+# MAC OS files
+.DS_Store
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### Eclipse ###
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# others
+*#
+*.sw?
+*~
+.#*
+.*.md.html
+.attach_pid*
+build
+build.log
+target
+lib/
